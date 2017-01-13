@@ -46,3 +46,20 @@ wireless adb connection
 	C:\Users\gunda\Work\Coustyx\Customers\Atieva\TimingFiles>adb kill-server
 	adb kill-server
  ===== 
+Device names
+
+01-12 20:00:02.938 15502-15539/com.qualcomm.ftcrobotcontroller I/RobotCore: ========= Device Information ===================================================
+01-12 20:00:02.938 15502-15539/com.qualcomm.ftcrobotcontroller I/RobotCore: Type                                          Name                           Connection
+01-12 20:00:02.948 15502-15539/com.qualcomm.ftcrobotcontroller I/RobotCore: Modern Robotics USB DC Motor Controller       Motor Elevator                 USB A104OPZK
+01-12 20:00:02.948 15502-15539/com.qualcomm.ftcrobotcontroller I/RobotCore: Modern Robotics USB DC Motor Controller       Motor Wheels                   USB AL00UYEO
+01-12 20:00:02.948 15502-15539/com.qualcomm.ftcrobotcontroller I/RobotCore: Modern Robotics USB DC Motor Controller       Motor Launcher                 USB A104OQFT
+01-12 20:00:02.948 15502-15539/com.qualcomm.ftcrobotcontroller I/RobotCore: DC Motor                                      motorElevator                  USB A104OPZK; port 1
+01-12 20:00:02.948 15502-15539/com.qualcomm.ftcrobotcontroller I/RobotCore: DC Motor                                      motorLeft                      USB AL00UYEO; port 2
+01-12 20:00:02.948 15502-15539/com.qualcomm.ftcrobotcontroller I/RobotCore: DC Motor                                      motorBrush                     USB A104OPZK; port 2
+01-12 20:00:02.948 15502-15539/com.qualcomm.ftcrobotcontroller I/RobotCore: DC Motor                                      motorLauncherL                 USB A104OQFT; port 2
+01-12 20:00:02.948 15502-15539/com.qualcomm.ftcrobotcontroller I/RobotCore: DC Motor                                      motorRight                     USB AL00UYEO; port 1
+01-12 20:00:02.948 15502-15539/com.qualcomm.ftcrobotcontroller I/RobotCore: DC Motor                                      motorLauncherR                 USB A104OQFT; port 1
+01-12 20:00:02.948 15502-15539/com.qualcomm.ftcrobotcontroller I/RobotCore: Modern Robotics USB DC Motor Controller       Motor Elevator                 USB A104OPZK
+01-12 20:00:02.948 15502-15539/com.qualcomm.ftcrobotcontroller I/RobotCore: Modern Robotics USB DC Motor Controller       Motor Wheels                   USB AL00UYEO
+01-12 20:00:02.948 15502-15539/com.qualcomm.ftcrobotcontroller I/RobotCore: Modern Robotics USB DC Motor Controller       Motor Launcher                 USB A104OQFT
+ ===== 
