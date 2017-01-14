@@ -77,7 +77,7 @@ public class AutonomousBlue extends LinearOpMode {
         sleep(2000); //may need to changed, time in milliseconds
 
 //turn
-        motorRight.setPower(-.65);
+        motorRight.setPower(-.75);
         motorLeft.setPower(1.00);
         sleep(200); //may need to changed, time in milliseconds
 
@@ -92,7 +92,7 @@ public class AutonomousBlue extends LinearOpMode {
         //divide this turn into four segments
 
         motorLeft.setPower(1);
-        motorRight.setPower(.55);
+        motorRight.setPower(.6);
         sleep(1000); //may need to changed, time in milliseconds
         //segment 1 == start of turn
 //        long currentTime = System.currentTimeMillis();
