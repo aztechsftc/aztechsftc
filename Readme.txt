@@ -63,3 +63,19 @@ Device names
 01-12 20:00:02.948 15502-15539/com.qualcomm.ftcrobotcontroller I/RobotCore: Modern Robotics USB DC Motor Controller       Motor Wheels                   USB AL00UYEO
 01-12 20:00:02.948 15502-15539/com.qualcomm.ftcrobotcontroller I/RobotCore: Modern Robotics USB DC Motor Controller       Motor Launcher                 USB A104OQFT
  ===== 
+
+
+sample code for using encoders
+
+http://ftc.flfirst.org/index.php/helpful-links/tips/98-ftc-409-motor-encoder-example
+
+http://ftcforum.usfirst.org/showthread.php?4333-Encoders
+
+https://www.youtube.com/watch?v=d0liBxZCtrA
+
+http://ftcforum.usfirst.org/showthread.php?7100-Encoders-and-Autonomous
+
+
+ =====
+
+https://www.firstchesapeake.org/images/downloads/2016/ftc/VCU_Autonomous-Programming-Session.pdf 
