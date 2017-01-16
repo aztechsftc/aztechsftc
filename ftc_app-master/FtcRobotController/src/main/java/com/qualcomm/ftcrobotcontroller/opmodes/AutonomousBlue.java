@@ -67,8 +67,8 @@ public class AutonomousBlue extends LinearOpMode {
         long startTime = System.currentTimeMillis();
         long turningTime = 500;
         double turnMagnitude = 0.4;  //0 means no turns 1 is max
-        // GO STRAIGHT
 
+        // GO STRAIGHT
         motorLeft.setPower(1);
         motorRight.setPower(.3);
         sleep(500); //may need to changed, time in milliseconds
@@ -81,7 +81,8 @@ public class AutonomousBlue extends LinearOpMode {
 
 
 //turn
-        motorRight.setPower(-.75);
+//        motorRight.setPower(-.75);
+        motorRight.setPower(-.65);
         motorLeft.setPower(1.00);
         sleep(300); //may need to changed, time in milliseconds
 
@@ -153,6 +154,7 @@ public class AutonomousBlue extends LinearOpMode {
 
         motorLaunchL.setPower(1);
         motorLaunchR.setPower(1);
+        sleep(4000); //may need to changed, time in milliseconds
 //
         motorElevator.setPower(1);
         sleep(6000);
