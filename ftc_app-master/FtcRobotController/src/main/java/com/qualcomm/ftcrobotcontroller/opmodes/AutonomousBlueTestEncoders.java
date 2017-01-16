@@ -1,8 +1,6 @@
 package com.qualcomm.ftcrobotcontroller.opmodes;
 
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
-
-import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorController;
 import com.qualcomm.robotcore.util.Range;
@@ -10,7 +8,7 @@ import com.qualcomm.robotcore.util.Range;
 /**
  * Created by neeraja on 12/1/2016.
  */
-public class AutonomousBlue extends LinearOpMode {
+public class AutonomousBlueTestEncoders extends LinearOpMode {
 
     final static double MOTOR_POWER = 0.5; // Higher values will cause the robot to move faster
 
@@ -43,8 +41,11 @@ public class AutonomousBlue extends LinearOpMode {
         motorElevator = hardwareMap.dcMotor.get("motorElevator");
         motorBrush = hardwareMap.dcMotor.get("motorBrush");
         motorLaunchL = hardwareMap.dcMotor.get("motorLauncherL");
-        motorLaunchL.setDirection(DcMotor.Direction.REVERSE);
         motorLaunchR = hardwareMap.dcMotor.get("motorLauncherR");
+
+
+        motorRight.setMode(DcMotorController.RunMode.RUN_USING_ENCODERS);
+        motorLeft.setMode(DcMotorController.RunMode.RUN_USING_ENCODERS);
 
 
         // wait for the start button to be pressed
@@ -63,11 +64,13 @@ public class AutonomousBlue extends LinearOpMode {
         //comment
 
 
+
+
         //execute the turn in 750sec
         long startTime = System.currentTimeMillis();
         long turningTime = 500;
         double turnMagnitude = 0.4;  //0 means no turns 1 is max
-        // GO STRAIGHT
+
 
         motorLeft.setPower(1);
         motorRight.setPower(.3);
@@ -78,61 +81,14 @@ public class AutonomousBlue extends LinearOpMode {
         motorRight.setPower(0);
         sleep(3000); //may need to changed, time in milliseconds
 
-
-
 //turn
         motorRight.setPower(-.75);
         motorLeft.setPower(1.00);
-        sleep(300); //may need to changed, time in milliseconds
+        sleep(200); //may need to changed, time in milliseconds
 
-//pause for 1 sec
-        motorLeft.setPower(0);
-        motorRight.setPower(0);
-        sleep(1000); //may need to changed, time in milliseconds
-
-
-
-//
-//        motorRight.setPower(-.4);
-//        motorLeft.setPower(0.5);
-//        sleep(400); //may need to changed, time in milliseconds
-//        time(200);
-
-
-        double factor=0.5;
-        motorLeft.setPower(1*factor);
-        motorRight.setPower(.55*factor);
-        sleep(375); //may need to changed, time in milliseconds
-
-        motorLeft.setPower(0);
-        motorRight.setPower(0);
-        sleep(200);
-
-
-        motorLeft.setPower(1*factor);
-        motorRight.setPower(.55*factor);
-        sleep(375); //may need to changed, time in milliseconds
-        motorLeft.setPower(0);
-        motorRight.setPower(0);
-        sleep(200);
-
-        motorLeft.setPower(1*factor);
-        motorRight.setPower(.55*factor);
-        sleep(375); //may need to changed, time in milliseconds
-        motorLeft.setPower(0);
-        motorRight.setPower(0);
-        sleep(200);
-
-        motorLeft.setPower(1*factor);
-        motorRight.setPower(.55*factor);
-        sleep(375); //may need to changed, time in milliseconds
-        motorLeft.setPower(0);
-        motorRight.setPower(0);
-        sleep(200);
-
-//        motorLeft.setPower(1);
-//        motorRight.setPower(.55);
-//        sleep(750); //may need to changed, time in milliseconds
+        motorLeft.setPower(1);
+        motorRight.setPower(.55);
+        sleep(750); //may need to changed, time in milliseconds
 
 
         motorLeft.setPower(0);
@@ -140,31 +96,15 @@ public class AutonomousBlue extends LinearOpMode {
         sleep(5000); //may need to changed, time in milliseconds
         //divide this turn into four segments
 
-        motorLeft.setPower(1);
-        motorRight.setPower(0.3);
-        sleep(250); //may need to changed, time in milliseconds
+
         //start of shooting
         //        //
-
-        motorLeft.setPower(0);
-        motorRight.setPower(0);
-        sleep(2000); //may need to changed, time in milliseconds
-
-
-        motorLaunchL.setPower(1);
-        motorLaunchR.setPower(1);
+//        motorLaunchL.setPower(1);
+//        motorLaunchR.setPower(1);
+//        sleep(3000); //may need to changed, time in milliseconds
 //
-        motorElevator.setPower(1);
-        sleep(6000);
-
-        //turn off shooter
-        motorLaunchL.setPower(0);
-        motorLaunchR.setPower(0);
-        motorElevator.setPower(0);
-
-
-
-
+//        motorElevator.setPower(1);
+//        sleep(6000);
 
         motorLeft.setPower(1);
         motorRight.setPower(.6);
@@ -280,8 +220,4 @@ public class AutonomousBlue extends LinearOpMode {
 
     }
 
-
-    public void stopDriving() {
-        setDrivePower(0.0,0.0);
-    }
 }
