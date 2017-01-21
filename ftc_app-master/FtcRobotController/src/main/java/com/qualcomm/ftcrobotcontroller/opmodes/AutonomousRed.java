@@ -75,20 +75,24 @@ public class AutonomousRed extends LinearOpMode {
 
         motorLeft.setPower(0);
         motorRight.setPower(0);
-        sleep(3000); //may need to changed, time in milliseconds
+        sleep(3050); //may need to changed, time in milliseconds
 
 
-//to do
-        //just need to change this to turn left instead of right.
+
+//turn
 //        motorRight.setPower(-.75);
-        motorRight.setPower(-.65);
-        motorLeft.setPower(1.00);
+//        motorRight.setPower(-.65);
+//        motorLeft.setPower(1.00);
+
+        motorRight.setPower(.65);
+        motorLeft.setPower(-0.6);
         sleep(300); //may need to changed, time in milliseconds
 
 //pause for 1 sec
         motorLeft.setPower(0);
         motorRight.setPower(0);
         sleep(1000); //may need to changed, time in milliseconds
+
 
 
 //
@@ -98,9 +102,9 @@ public class AutonomousRed extends LinearOpMode {
 //        time(200);
 
 
-        double factor = 0.5;
-        motorLeft.setPower(1 * factor);
-        motorRight.setPower(.55 * factor);
+        double factor=0.5;
+        motorLeft.setPower(1*factor);
+        motorRight.setPower(.55*factor);
         sleep(375); //may need to changed, time in milliseconds
 
         motorLeft.setPower(0);
@@ -108,22 +112,22 @@ public class AutonomousRed extends LinearOpMode {
         sleep(200);
 
 
-        motorLeft.setPower(1 * factor);
-        motorRight.setPower(.55 * factor);
+        motorLeft.setPower(1*factor);
+        motorRight.setPower(.55*factor);
         sleep(375); //may need to changed, time in milliseconds
         motorLeft.setPower(0);
         motorRight.setPower(0);
         sleep(200);
 
-        motorLeft.setPower(1 * factor);
-        motorRight.setPower(.55 * factor);
+        motorLeft.setPower(1*factor);
+        motorRight.setPower(.55*factor);
         sleep(375); //may need to changed, time in milliseconds
         motorLeft.setPower(0);
         motorRight.setPower(0);
         sleep(200);
 
-        motorLeft.setPower(1 * factor);
-        motorRight.setPower(.55 * factor);
+        motorLeft.setPower(1*factor);
+        motorRight.setPower(.55*factor);
         sleep(375); //may need to changed, time in milliseconds
         motorLeft.setPower(0);
         motorRight.setPower(0);
@@ -138,16 +142,16 @@ public class AutonomousRed extends LinearOpMode {
         motorRight.setPower(0);
         sleep(5000); //may need to changed, time in milliseconds
         //divide this turn into four segments
-
-        motorLeft.setPower(1);
-        motorRight.setPower(0.3);
-        sleep(250); //may need to changed, time in milliseconds
+//
+//        motorLeft.setPower(1);
+//        motorRight.setPower(0.3);
+//        sleep(250); //may need to changed, time in milliseconds
         //start of shooting
-        //
+        //        //
 
-        motorLeft.setPower(0);
-        motorRight.setPower(0);
-        sleep(2000); //may need to changed, time in milliseconds
+//        motorLeft.setPower(0);
+//        motorRight.setPower(0);
+//        sleep(2000); //may need to changed, time in milliseconds
 
 
         motorLaunchL.setPower(1);
@@ -163,9 +167,12 @@ public class AutonomousRed extends LinearOpMode {
         motorElevator.setPower(0);
 
 
+
+
+
         motorLeft.setPower(1);
-        motorRight.setPower(.6);
-        sleep(1250); //may need to changed, time in milliseconds
+        motorRight.setPower(.2);
+        sleep(1500); //may need to changed, time in milliseconds
         //segment 1 == start of turn
 //        long currentTime = System.currentTimeMillis();
 //        double elapsedTimeFraction = (currentTime - startTime) / turningTime;
