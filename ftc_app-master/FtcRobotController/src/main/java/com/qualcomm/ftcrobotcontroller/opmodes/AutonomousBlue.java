@@ -82,7 +82,8 @@ public class AutonomousBlue extends LinearOpMode {
 
 //turn
 //        motorRight.setPower(-.75);
-        motorRight.setPower(-.65);
+//        motorRight.setPower(-.65);
+        motorRight.setPower(-.7);
         motorLeft.setPower(1.00);
         sleep(300); //may need to changed, time in milliseconds
 
@@ -157,7 +158,14 @@ public class AutonomousBlue extends LinearOpMode {
         sleep(4000); //may need to changed, time in milliseconds
 //
         motorElevator.setPower(1);
-        sleep(6000);
+        sleep(500);
+
+
+        motorElevator.setPower(-1);
+        sleep(550);
+
+        motorElevator.setPower(1);
+        sleep(3000);
 
         //turn off shooter
         motorLaunchL.setPower(0);

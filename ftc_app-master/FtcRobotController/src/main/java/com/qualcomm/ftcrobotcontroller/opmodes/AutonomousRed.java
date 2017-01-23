@@ -85,7 +85,8 @@ public class AutonomousRed extends LinearOpMode {
 //        motorLeft.setPower(1.00);
 
         motorRight.setPower(.65);
-        motorLeft.setPower(-0.6);
+//        motorLeft.setPower(-0.6);
+        motorLeft.setPower(-0.7);
         sleep(300); //may need to changed, time in milliseconds
 
 //pause for 1 sec
@@ -153,13 +154,19 @@ public class AutonomousRed extends LinearOpMode {
 //        motorRight.setPower(0);
 //        sleep(2000); //may need to changed, time in milliseconds
 
-
         motorLaunchL.setPower(1);
         motorLaunchR.setPower(1);
         sleep(4000); //may need to changed, time in milliseconds
 //
         motorElevator.setPower(1);
-        sleep(6000);
+        sleep(500);
+
+
+        motorElevator.setPower(-1);
+        sleep(550);
+
+        motorElevator.setPower(1);
+        sleep(3000);
 
         //turn off shooter
         motorLaunchL.setPower(0);
