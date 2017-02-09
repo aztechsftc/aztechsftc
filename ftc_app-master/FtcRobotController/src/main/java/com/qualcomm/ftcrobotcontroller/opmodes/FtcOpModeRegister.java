@@ -46,7 +46,6 @@ public class FtcOpModeRegister implements OpModeRegister {
    * @param manager op mode manager
    */
   public void register(OpModeManager manager) {
-
     /*
      * register your op modes here.
      * The first parameter is the name of the op mode
@@ -57,12 +56,15 @@ public class FtcOpModeRegister implements OpModeRegister {
 
     //manager.register("NullOp", NullOp.class);
     manager.register("TeleOp", TeleOp.class);
-    manager.register("MR Gyro Test", MRGyroTest.class);
-    manager.register("Blue59", AutonomousBlue.class);
-    manager.register("Encoder Test", AutonomousBlueTestEncoders.class);
+    manager.register("Auto", Auto.class);
+    manager.register("Auto + Blue 1-v1", AutoBlue1.class);
 
 
-    manager.register("Red9", AutonomousRed.class);
+
+//    manager.register("TeleOpv2", TeleOpv2.class);
+//    manager.register("MR Gyro Test", MRGyroTest.class);
+//    manager.register("Encoder Test", AutonomousBlueTestEncoders.class);
+//    manager.register("Red12", AutonomousRed.class);
 
 
 

@@ -86,7 +86,7 @@ public class AutonomousRed extends LinearOpMode {
 
         motorRight.setPower(.65);
 //        motorLeft.setPower(-0.6);
-        motorLeft.setPower(-0.7);
+        motorLeft.setPower(-0.75);
         sleep(300); //may need to changed, time in milliseconds
 
 //pause for 1 sec
@@ -179,7 +179,7 @@ public class AutonomousRed extends LinearOpMode {
 
         motorLeft.setPower(1);
         motorRight.setPower(.2);
-        sleep(1500); //may need to changed, time in milliseconds
+        sleep(1700); //may need to changed, time in milliseconds
         //segment 1 == start of turn
 //        long currentTime = System.currentTimeMillis();
 //        double elapsedTimeFraction = (currentTime - startTime) / turningTime;

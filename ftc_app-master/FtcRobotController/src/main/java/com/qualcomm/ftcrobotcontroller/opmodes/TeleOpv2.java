@@ -11,7 +11,7 @@ import com.qualcomm.robotcore.util.Range;
 //import com.qualcomm.robotcore.hardware.Servo;
 
 
-public class TeleOp extends OpMode {
+public class TeleOpv2 extends OpMode {
 
     DcMotor motorRight;
     DcMotor motorLeft;
@@ -23,7 +23,7 @@ public class TeleOp extends OpMode {
     /**
      * Constructor
      */
-    public TeleOp() {
+    public TeleOpv2() {
 
     }
 
@@ -57,14 +57,13 @@ public class TeleOp extends OpMode {
         // y equals -1 means the joystick is pushed all of the way forward.
         //x equals -1 means the joystick 0is pushed all the way to the left.
 
-        float brush = gamepad1.left_stick_y;
+        float brush = 0;//gamepad1.left_stick_y;
         float elevator = -gamepad2.right_stick_y;
         float launcher = gamepad2.left_stick_y;
         float throttle = -gamepad1.right_stick_y;
         float direction = gamepad1.right_stick_x;
         float right = throttle - direction;
-//        float left = -(throttle + direction);
-        float left = (throttle + direction);
+        float left = -(throttle + direction);
 
         // clip the right/left values so that the values never exceed +/- 1
         right = Range.clip(right, -1, 1);
@@ -82,12 +81,8 @@ public class TeleOp extends OpMode {
         launcher = (float)scaleInput(launcher);
 
         // write the values to the motors
-        motorRight.setPower(0.6*right);
-//        motorRight.setPower(1*right);
-
-        motorLeft.setPower(0.6*left);
-//        motorLeft.setPower(1*left);
-
+        motorRight.setPower(gamepad1.right_stick_y);
+        motorLeft.setPower(gamepad1.left_stick_y);
         telemetry.addData("left power", left);
         telemetry.addData("right power", right);
         motorLaunchL.setPower(launcher);
